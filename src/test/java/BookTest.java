@@ -49,5 +49,4 @@ public class BookTest {
         assertThat(book.checkPublisher("운영체제"),is("교보문고"));
     }
 
-
 }
