@@ -38,7 +38,8 @@ public class BookTest {
 
         when(book.checkBookPrice("운영체제")).thenReturn("38000");
         assertThat(book.checkBookPrice("운영체제“),is("38000"));
-
+   }
+    
 
    @Test
     public void 출판사확인Test() {
@@ -46,6 +47,7 @@ public class BookTest {
 
         when(book.checkPublisher("운영체제")).thenReturn("교보문고");
         assertThat(book.checkPublisher("운영체제"),is("교보문고"));
+    }
 
 
 }
