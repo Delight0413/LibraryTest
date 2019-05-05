@@ -30,5 +30,4 @@ public class BookTest {
         when(book.checkFamousLine("길도")).thenReturn("길도는 귀여운 고양이");
         assertThat(book.checkFamousLine("길도"),is("길도는 귀여운 고양이"));
     }  
-
 }
