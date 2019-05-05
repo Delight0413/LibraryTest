@@ -10,6 +10,8 @@ public class Book {
     private String ISBN;
     private int pages;
     private String author;
+    private int price;
+    private String pub;
     private List<Integer> bookMarks;
     private List<String> famousLines;
 
