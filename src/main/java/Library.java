@@ -29,7 +29,7 @@ public class Library {
         return null;
     }
 
-    public void checkBookPrice(int price) { 
+    public Book checkBookPrice(int price) { 
 	    price.add(price);
 	    return price;
     }
