@@ -31,12 +31,4 @@ public class BookTest {
         assertThat(book.checkFamousLine("길도"),is("길도는 귀여운 고양이"));
     }  
 
-   @Test
-    public void 출판사확인Test() {
-        Book book = mock(Book.class);
-
-        when(book.checkPublisher("운영체제")).thenReturn("교보문고");
-        assertThat(book.checkPublisher("운영체제"),is("교보문고"));
-    }
-
 }
