@@ -35,4 +35,17 @@ public class Book {
         famousLines.add(famousLine);
         return famousLine;
     }
+    
+    public void checkBookPrice(int price) { 
+	    price.add(price);
+	    return price;
+    }
+
+
+    public void checkPublisher(String pub) {
+	    price.add(pub);
+	    return pub;
+    }
+
+    
 }
