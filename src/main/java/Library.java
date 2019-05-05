@@ -29,15 +29,15 @@ public class Library {
         return null;
     }
 
-    public Book checkBookPrice(int price) { 
-	    price.add(price);
-	    return price;
+    public int checkBookPrice(String title) {
+        Book book = findByTitle(title);
+        return book.getPrice();
     }
 
 
-    public void checkPublisher(String pub) {
-	    price.add(pub);
-	    return pub;
+    public String checkPublisher(String title) {
+        Book book = findByTitle(title);
+        return book.getPublisher();
     }
     
     public int size() {
