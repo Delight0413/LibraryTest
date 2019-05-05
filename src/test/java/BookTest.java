@@ -30,6 +30,22 @@ public class BookTest {
         when(book.checkFamousLine("길도")).thenReturn("길도는 귀여운 고양이");
         assertThat(book.checkFamousLine("길도"),is("길도는 귀여운 고양이"));
     }
+    
+    
+    @Test
+    public void 가격확인Test() {
+        Book book = mock(Book.class);
+
+        when(book.checkBookPrice("운영체제")).thenReturn("38000");
+        assertThat(book.checkBookPrice("운영체제“),is("38000"));
+
+
+   @Test
+    public void 출판사확인Test() {
+        Book book = mock(Book.class);
+
+        when(book.checkPublisher("운영체제")).thenReturn("교보문고");
+        assertThat(book.checkPublisher("운영체제"),is("교보문고"));
 
 
 }
