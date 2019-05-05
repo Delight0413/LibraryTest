@@ -49,19 +49,21 @@ public class LibraryTest {
     }
           
     @Test
-    public void 가격확인Test() {
-        Book book = mock(Book.class);
-
-        when(book.checkBookPrice("운영체제")).thenReturn("38000");
-        assertThat(book.checkBookPrice("운영체제"),is("38000"));
+    public void checkPriceTest() {
+        Library library = mock(Library.class);
+        
+        when(library.checkBookPrice("운영체제")).thenReturn("38000");
+        assertThat(library.checkBookPrice("운영체제"), is("38000"));
+        verify(library).checkBookPrice(anyString());
    }
     
    @Test
-    public void 출판사확인Test() {
-        Book book = mock(Book.class);
-
-        when(book.checkPublisher("운영체제")).thenReturn("교보문고");
-        assertThat(book.checkPublisher("운영체제"),is("교보문고"));
+    public void checkPublisherTest() {
+        Library library = mock(Library.class);
+        
+        when(library.checkPublisher("운영체제")).thenReturn("38000");
+        assertThat(library.checkPublisher("운영체제"), is("38000"));
+        verify(library).checkPublisher(anyString());
     }
 
     
