@@ -61,8 +61,8 @@ public class LibraryTest {
     public void checkPublisherTest() {
         Library library = mock(Library.class);
         
-        when(library.checkPublisher("운영체제")).thenReturn("38000");
-        assertThat(library.checkPublisher("운영체제"), is("38000"));
+        when(library.checkPublisher("운영체제")).thenReturn("교보문고");
+        assertThat(library.checkPublisher("운영체제"), is(""));
         verify(library).checkPublisher(anyString());
     }
 
