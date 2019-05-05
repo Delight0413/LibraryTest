@@ -29,6 +29,14 @@ public class Library {
         return null;
     }
 
+        
+    public void checkBookPrice(int price) { 
+	    price.add(price);
+	    return price;
+    }
+
+    
+    
     public int size() {
         return books.size();
     }
