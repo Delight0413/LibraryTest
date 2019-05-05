@@ -37,7 +37,7 @@ public class BookTest {
         Book book = mock(Book.class);
 
         when(book.checkBookPrice("운영체제")).thenReturn("38000");
-        assertThat(book.checkBookPrice("운영체제“),is("38000"));
+        assertThat(book.checkBookPrice("운영체제"),is("38000"));
    }
     
 
